@@ -1,5 +1,6 @@
 import 'package:consulta_cep/compartilhados/padrao_imagens.dart';
 import 'package:consulta_cep/pagina/busca_cep_page.dart';
+import 'package:consulta_cep/pagina/lista_cep_page.dart';
 import 'package:flutter/material.dart';
 
 class MenuPage extends StatefulWidget {
@@ -49,13 +50,12 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print("hitorico cep");
-                        // Navigator.push(
-                        // context,
-                        // MaterialPageRoute(
-                        // builder: (context) => HistoricoImcPage(),
-                        // ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ListaCepPage(),
+                          ),
+                        );
                       },
                       child: Card(
                         child: Container(
